@@ -3,7 +3,7 @@ import MutationObserver from 'mutationobserver-shim';
 
 import { render, screen} from "@testing-library/react";
 import BubblePage from './BubblePage';
-
+impor
 test("Renders without errors", ()=> {
     
 });
