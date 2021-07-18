@@ -31,7 +31,7 @@ const Login = () => {
         .then((res) => {
           localStorage.setItem('token', res.data.payload)
           push("/bubblePage")
-          console.log(res)
+          
         })
         .catch((error)=>{
           console.log(error)

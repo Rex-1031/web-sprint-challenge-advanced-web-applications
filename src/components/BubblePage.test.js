@@ -1,13 +1,23 @@
 import React from 'react';
-import MutationObserver from 'mutationobserver-shim';
 
-import { render, screen} from "@testing-library/react";
+import { render, screen, waitFor} from "@testing-library/react";
 import BubblePage from './BubblePage';
-impor
+
+
+
+
 test("Renders without errors", ()=> {
-    
+    render(<BubblePage />)
+    screen.debug
 });
 
 test("Renders appropriate number of colors passed in through mock", async ()=> {
     //Keep in mind that our service is called on mount for this component.
+
+    render(<BubblePage />)
+    const colors = screen.getByText(/colors/i);
+
+    await waitFor (()=>{
+        expect(colors).toBeInTheDocument
+    })
 });

@@ -30,7 +30,6 @@ const BubblePage = () => {
     axiosWithAuth()
       .put(`/colors/${editColor.id}`, editColor)
         .then((res) =>{
-          console.log(res)
 
           let index = colors.findIndex((color) => color.id === editColor.id)
           colors[index] = editColor
