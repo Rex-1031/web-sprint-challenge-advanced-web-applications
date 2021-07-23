@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const EditMenu = (props) => {
   const {editColor, setEditColor, saveEdit, toggleEdit} = props;
   
@@ -15,8 +16,8 @@ const EditMenu = (props) => {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    saveEdit(editColor);
+    e.preventDefault()
+      saveEdit(editColor)
   }
 
   const handleCancel = () => {
